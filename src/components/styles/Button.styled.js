@@ -6,6 +6,10 @@ const ButtonStyled = styled.button`
   margin-top: 10px;
   color: ${({ theme }) => theme.colors.primary};
 
+  @media (max-width: 395px) {
+    width: auto;
+  }
+
   &:hover {
     cursor: pointer;
   }
