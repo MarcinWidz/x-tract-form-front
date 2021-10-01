@@ -1,10 +1,17 @@
 import "./App.css";
+import Header from "./components/Header";
+import { ThemeProvider } from "styled-components";
+import GlobalStyles from "./components/styles/Global";
+import theme from "./components/styles/theme";
+import Home from "./containers/Home";
 
 function App() {
   return (
-    <div>
-      Hello from <a href="https://www.lereacteur.io">Le Reacteur !</a>
-    </div>
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <Header />
+      <Home />
+    </ThemeProvider>
   );
 }
 
