@@ -5,11 +5,17 @@ const userAnswersStyled = styled.div`
   color: white;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   left: 20%;
   right: 20%;
   top: 30%;
   h1 {
     text-align: center;
+    @media (max-width: 425px) {
+      font-size: 1.5rem;
+      overflow: scroll;
+    }
   }
 `;
 
