@@ -7,6 +7,7 @@ export const FormStyled = styled.form`
   flex-direction: column;
   left: 20%;
   right: 20%;
+  top: 30%;
   h1 {
     text-align: center;
   }
